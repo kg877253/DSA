@@ -1,0 +1,9 @@
+﻿{
+  "code-runner.executorMap": {
+    "cpp": "cd \"$workspaceRoot\" ; if ($?) { New-Item -ItemType Directory -Force build | Out-Null ; g++ $fullFileName -o \"build\\$fileNameWithoutExt.exe\" } ; if ($?) { .\\build\\$fileNameWithoutExt.exe }"
+  },
+  "code-runner.fileDirectoryAsCwd": false,
+  "code-runner.runInTerminal": true,
+  "code-runner.showExecutionMessage": false,
+  "terminal.integrated.cwd": "${workspaceFolder}"
+}
