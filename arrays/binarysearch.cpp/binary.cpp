@@ -8,6 +8,7 @@ int binarysearch(int arr[],int size,int key){
 
     
     while(start<=end){
+        //also we can use int mid=(start+end)/2; but it may exceed the range of integer if start and end are large numbers
         int mid = start + (end - start) / 2;
         
         if(arr[mid]==key){
