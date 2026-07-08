@@ -9,11 +9,12 @@ int count(int arr[],int size){
     cout<< count[0]<<endl;
     cout<< count[1]<<endl; 
     cout<< count[2]<<endl;
+    cout<< count[3]<<endl;
 
 }
 
 int main(){
-    int arr[12]={0,1,2,2,1,1,0,0,0,1,1,2};
+    int arr[12]={0,1,2,2,1,1,0,0,0,1,3,2};
     count(arr,12);
     return 0;
 }
