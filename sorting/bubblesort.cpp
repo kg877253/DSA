@@ -15,11 +15,15 @@ int bubblesort(int arr[],int n){
     }
     }
 }
+
 int printarr(int arr[],int n){
     for(int i =0;i<n;i++){
         cout<<arr[i]<<" ";
     }
 }
+
+
+
 int main() {
     int arr[15]={12,4,7,3,45,221,122,321,567,74333,664,65,32,31,21};
     bubblesort(arr,15);
