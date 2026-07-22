@@ -1,5 +1,14 @@
 #include <bits/stdc++.h>
 using namespace std;
+void reverse(char ch[],int n){
+    int s=0;
+    int e=n-1;
+    while(s<e){
+        swap(ch[s],ch[e]);
+        s++;
+        e--;
+    }
+}
 
 int countchar(char ch[]){
     int count=0;
@@ -15,6 +24,9 @@ int main() {
     char ch[100];
     cout<<"Enter a string: ";
     cin>>ch;
-    cout<<countchar(ch);
+    int c = countchar(ch);
+    cout<<"Length of the string: "<<c<<endl;
+    reverse(ch,c);
+    cout<<"Reversed string: "<<ch<<endl;
     return 0;
 }
