@@ -16,6 +16,7 @@ int main() {
     while(chr[len] != '\0') {
         len++;
     }
+    
     reverse(chr,len);
     cout<<"Reversed string: "<<chr<<endl;
     return 0;
