@@ -1,12 +1,15 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-char palindrome(string s ){
+char palindrome(string s)
+{
     int left = 0;
     int right = s.length() - 1;
 
-    while (left < right) {
-        if (s[left] != s[right]) {
+    while (left < right)
+    {
+        if (s[left] != s[right])
+        {
             return 'N';
         }
         left++;
@@ -15,9 +18,9 @@ char palindrome(string s ){
     return 'Y';
 }
 
-
-int main() {
+int main()
+{
     string s = "racecar";
-    cout<<palindrome(s) << endl;
+    cout << palindrome(s) << endl;
     return 0;
 }
