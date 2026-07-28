@@ -14,6 +14,8 @@ char palindrome(string s ){
     }
     return 'Y';
 }
+
+
 int main() {
     string s = "racecar";
     cout<<palindrome(s) << endl;
