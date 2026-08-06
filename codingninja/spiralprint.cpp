@@ -1,9 +1,11 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-class Solution {
+class Solution
+{
 public:
-    vector<int> spiralOrder(vector<vector<int>>& matrix) {
+    vector<int> spiralOrder(vector<vector<int>> &matrix)
+    {
         vector<int> ans;
         int row = matrix.size();
         int col = matrix[0].size();
@@ -16,31 +18,36 @@ public:
         int count = 0;
         int total = row * col;
 
-        while (count < total) {
+        while (count < total)
+        {
 
             // left to right along startingrow
-            for (int i = startingcol; count < total && i <= endingcol; i++) {
+            for (int i = startingcol; count < total && i <= endingcol; i++)
+            {
                 ans.push_back(matrix[startingrow][i]);
                 count++;
             }
             startingrow++;
 
             // top to bottom along endingcol
-            for (int i = startingrow; count < total && i <= endingrow; i++) {
+            for (int i = startingrow; count < total && i <= endingrow; i++)
+            {
                 ans.push_back(matrix[i][endingcol]);
                 count++;
             }
             endingcol--;
 
             // right to left along endingrow
-            for (int i = endingcol; count < total && i >= startingcol; i--) {
+            for (int i = endingcol; count < total && i >= startingcol; i--)
+            {
                 ans.push_back(matrix[endingrow][i]);
                 count++;
             }
             endingrow--;
 
             // bottom to top along startingcol
-            for (int i = endingrow; count < total && i >= startingrow; i--) {
+            for (int i = endingrow; count < total && i >= startingrow; i--)
+            {
                 ans.push_back(matrix[i][startingcol]);
                 count++;
             }
@@ -51,16 +58,19 @@ public:
     }
 };
 
-int main(){
-    
+int main()
+{
+
     int nRows, mCols;
     cin >> nRows >> mCols;
 
     vector<vector<int>> arr(nRows, vector<int>(mCols));
 
-    cout<<"Enter the elements of the matrix:\n";
-    for (int i = 0; i < nRows; i++) {
-        for (int j = 0; j < mCols; j++) {
+    cout << "Enter the elements of the matrix:\n";
+    for (int i = 0; i < nRows; i++)
+    {
+        for (int j = 0; j < mCols; j++)
+        {
             cin >> arr[i][j];
         }
     }
@@ -68,8 +78,9 @@ int main(){
     Solution sol;
     vector<int> result = sol.spiralOrder(arr);
 
-    cout<<"Spiral Order: ";
-    for (int i = 0; i < result.size(); i++) {
+    cout << "Spiral Order: ";
+    for (int i = 0; i < result.size(); i++)
+    {
         cout << result[i] << " ";
     }
     cout << endl;
