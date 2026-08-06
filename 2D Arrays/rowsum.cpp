@@ -42,6 +42,16 @@ int main() {
             cin>>arr[row][col];
         }
     }
+    cout<<endl;
+
+    //print the 2D array
+    for(int i =0 ;i<3; i++){
+        for(int j = 0 ; j<4;j++){
+            cout<<arr[i][j]<<" ";
+        }
+        cout<<endl;
+    }
+
     // rowwisesum(arr, 3, 3);
     rowwisehighsum(arr, 3, 4);
     return 0;
