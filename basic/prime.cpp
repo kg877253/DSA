@@ -1,4 +1,5 @@
 #include <bits/stdc++.h>
+
 using namespace std;
 
 bool isprime(int n ){
@@ -24,6 +25,6 @@ int main() {
     else{
         cout<<n<<" is not prime number"<<endl;
     }
-    
+
     return 0;
 }
