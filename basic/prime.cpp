@@ -19,12 +19,13 @@ int main() {
     cout<<"enter a number: ";
     cin>>n;
 
-    if(isprime(n)){
-        cout<<n<<" is prime number"<<endl;
-    }
-    else{
-        cout<<n<<" is not prime number"<<endl;
-    }
+    int count=0;
+        for(int i =2;i<n;i++){
+            if(isprime(i)){
+                count++;
+            }
+        }
+    cout<<"count of prime numbers: "<<count<<endl;
 
     return 0;
 }
