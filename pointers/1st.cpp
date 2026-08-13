@@ -12,8 +12,6 @@ int main() {
 
     double d=22.4;
     double *p2=&d; // pointer variable p2 stores the address of d
-    cout << "Value of p2 (address of d): " << p2 << endl;
-    cout << "Value pointed by p2: " << *p2 << endl;
 
     cout<< "Size of pointer p: " << sizeof(p) << " bytes" << endl;
     cout<< "Size of pointer p2: " << sizeof(p2) << " bytes" << endl;
