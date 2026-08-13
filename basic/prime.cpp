@@ -2,30 +2,37 @@
 
 using namespace std;
 
-bool isprime(int n ){
+bool isprime(int n)
+{
 
-    if(n<=1){
+    if (n <= 1)
+    {
         return false;
     }
-    for(int i =2;i<n ;i++){
-        if(n%i==0){
-        return false;
-     }       
-}
+    for (int i = 2; i < n; i++)
+    {
+        if (n % i == 0)
+        {
+            return false;
+        }
+    }
     return true;
 }
-int main() {
-    int n ;
-    cout<<"enter a number: ";
-    cin>>n;
+int main()
+{
+    int n;
+    cout << "enter a number: ";
+    cin >> n;
 
-    int count=0;
-        for(int i =2;i<n;i++){
-            if(isprime(i)){
-                count++;
-            }
+    int count = 0;
+    for (int i = 2; i < n; i++)
+    {
+        if (isprime(i))
+        {
+            count++;
         }
-    cout<<"count of prime numbers: "<<count<<endl;
+    }
+    cout << "count of prime numbers: " << count << endl;
 
     return 0;
 }
