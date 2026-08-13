@@ -15,5 +15,10 @@ int main() {
     cout << "Value of p2 (address of d): " << p2 << endl;
     cout << "Value pointed by p2: " << *p2 << endl;
 
+    cout<< "Size of pointer p: " << sizeof(p) << " bytes" << endl;
+    cout<< "Size of pointer p2: " << sizeof(p2) << " bytes" << endl;
+    cout<< "Size of pointer p3: " << sizeof(num) << " bytes" << endl;
+    cout<< "Size of pointer p4: " << sizeof(d) << " bytes" << endl;
+
     return 0;
 }
