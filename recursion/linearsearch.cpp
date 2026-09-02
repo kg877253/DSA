@@ -11,8 +11,7 @@ void print(int arr[], int n)
     cout << endl;
 }
 
-bool linearsearch(int arr[], int n, int k)
-{
+bool linearsearch(int arr[], int n, int k){
 
     print(arr, n);
 
@@ -25,8 +24,7 @@ bool linearsearch(int arr[], int n, int k)
     return remainingpart;
 }
 
-int main()
-{
+int main(){
 
     int arr[5] = {1, 2, 3, 4, 5};
     int key = 4;
