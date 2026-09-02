@@ -4,13 +4,15 @@ using namespace std;
 void print(int arr[], int n)
 {
     cout << "size of array: " << n << endl;
-    for (int i = 0; i < n; i++){
+    for (int i = 0; i < n; i++)
+    {
         cout << arr[i] << " ";
     }
     cout << endl;
 }
 
-bool linearsearch(int arr[], int n, int k){
+bool linearsearch(int arr[], int n, int k)
+{
 
     print(arr, n);
 
@@ -23,12 +25,13 @@ bool linearsearch(int arr[], int n, int k){
     return remainingpart;
 }
 
-int main(){
+int main()
+{
 
     int arr[5] = {1, 2, 3, 4, 5};
     int key = 4;
 
     linearsearch(arr, 5, key) ? cout << "Element found" << endl : cout << "Element not found" << endl;
-    
+
     return 0;
 }
