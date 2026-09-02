@@ -11,8 +11,7 @@ void print(int arr[], int n)
     cout << endl;
 }
 
-bool linearsearch(int arr[], int n, int k)
-{
+bool linearsearch(int arr[], int n, int k){
 
     print(arr, n);
 
