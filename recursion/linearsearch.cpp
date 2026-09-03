@@ -12,7 +12,6 @@ void print(int arr[], int n){
 bool linearsearch(int arr[], int n, int k){
 
     print(arr, n);
-
     if (n == 0)
         return false;
     if (arr[0] == k)
